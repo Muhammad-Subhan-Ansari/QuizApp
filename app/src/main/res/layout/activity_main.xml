@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#e8f4f8"
+    android:gravity="center"
+    android:orientation="vertical">
+    <!-- Create a TextView to show the title. -->
+    <!-- Create an ImageButton for starting the game. -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=" Quiz"
+        android:textColor="@color/teal_700"
+        android:textSize="50sp" />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/start"
+        android:onClick="startGame"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startGame"
+        android:text="Start Quiz"
+        android:textColor="@color/teal_700"
+        android:textSize="40sp" />
+    <!-- Both the ImageButton and the TextView are clickable and once clicked
+    startGame() method in MainActivity will be called. -->
+</LinearLayout>
